@@ -54,8 +54,8 @@ function desencriptado() {
     let cambio = ['a', 'e', 'i', 'o', 'u'];
 
     for (let o = 0; o < cambiadas.length; o++) {
-        let regex = new RegExp(cambiadas[o], 'g'); // Crear expresión regular para buscar todas las ocurrencias de la letra cambiada
-        textoEncriptado = textoEncriptado.replace(regex, cambio[o]); // Reemplazar todas las ocurrencias de la letra cambiada por la original
+        let regex = new RegExp(cambiadas[o], 'g'); 
+        textoEncriptado = textoEncriptado.replace(regex, cambio[o]); 
     }
     document.querySelector('#outEncrip').value = textoEncriptado;
 }
