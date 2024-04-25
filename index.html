@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Diego Aldair Aranda Zavaleta</title>
+    <link href="estilo.css" rel="stylesheet" />
+    <link href="reset.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="">
+</head>
+<body>
+    <script src="index.js"></script>
+    <header>
+        <h1>Encriptador por Diego</h1>
+    </header>
+    <main>
+        <div id="instrucciones">
+            <h1>Bienvenido al encriptador</h1>
+            <p>Las instrucciones de uso son simples, solo puedes usar letras minúsculas del abecedario</p>
+            <ol>
+                <li>La letra "a" se convierte en "ai"</li>
+                <li>La letra "e" se convierte en "enter"</li>
+                <li>La letra "i" se convierte en "imes"</li>
+                <li>La letra "o" se convierte en "ober"</li>
+                <li>La letra "u" se convierte en "ufat"</li>
+            </ol>
+        </div>
+        <div class="boxMain">
+            <div class="zonaEncrip">
+                <div class="encriptador">
+                    <textarea placeholder="Introduzca el texto a encriptar aquí" id="inputEncrip">Introduzca el texto a encriptar aquí</textarea>
+                </div>
+                <div class="botones">
+                    <p id="enp" onclick="inputText('encrip')">Encriptar</p>
+                    <p id="des" onclick="inputText('desen')">Descencriptar</p>
+                </div>
+            </div>
+            <div class="zonaEncrip">
+                <div class="decencriptador">
+                    <textarea placeholder="Aquí se mostrará el texto encriptado o desencriptado" id="outEncrip" readonly>Aquí se mostrará el texto encriptado una vez le des a encriptar</textarea>
+                </div>
+                <div class="botones">
+                    <p id="copy" onclick="copy()">Copiar</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Proyecto desarrollado para Oracle Next Education. Todos los derechos reservados. </p>
+    </footer>
+</body>
+</html>
