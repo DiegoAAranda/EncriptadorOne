@@ -1,4 +1,4 @@
-﻿body {
+body {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -55,6 +55,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    flex-wrap: wrap;
 }
 
 .boxMain textarea {
@@ -85,6 +86,7 @@ main {
 .botones{
     display:flex;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 
